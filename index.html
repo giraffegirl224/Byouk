@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Byouk - Read. Write. Publish.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #fefefe;
+      color: #1a1a1a;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #171717;
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: #555;
+      margin: 1rem 0;
+    }
+    section {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .cta {
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #fff;
+      background-color: #7e22ce;
+      padding: 0.8rem 2rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    form {
+      margin-top: 2rem;
+    }
+    input[type="email"] {
+      padding: 0.8rem;
+      width: 80%;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    input[type="submit"] {
+      padding: 0.7rem 1.5rem;
+      background-color: #3b82f6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Byouk</h1>
+    <h2>Read. Write. Publish.</h2>
+  </header>
+
+  <section>
+    <p>
+      Turn your dreams into reality with <strong>Byouk</strong>, a writing and publishing platform where all writers can create books for actual readers.
+    </p>
+    <p>
+      With guides, AI, and us, your work will be at its best. And for just <strong>$5</strong>, you have a chance to be physically published.
+    </p>
+
+    <button class="cta">Join the Revolution</button>
+
+    <form name="signup" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="signup" />
+      <input type="email" name="email" placeholder="Enter your email" required />
+      <br />
+      <input type="submit" value="Stay in the loop" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Byouk. All rights reserved.</p>
+  </footer>
+
+  <!-- Simple view counter using a dummy image pixel -->
+  <img src="https://api.countapi.xyz/hit/byouk.site/visits" style="display: none" alt="counter" />
+</body>
+</html>
