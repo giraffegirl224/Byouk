@@ -105,4 +105,17 @@
   <!-- Simple view counter using a dummy image pixel -->
   <img src="https://api.countapi.xyz/hit/byouk.site/visits" style="display: none" alt="counter" />
 </body>
+<p>Total visits: <span id="visit-count">...</span></p>
+
+<script>
+  fetch('https://api.countapi.xyz/hit/byouksite/visits')
+    .then(response => response.json())
+    .then(data => {
+      console.log("Visit count updated:", data.value);
+      document.getElementById('visit-count').innerText = data.value;
+    })
+    .catch(err => {
+      console.error("Error connecting to CountAPI", err);
+    });
+</script>
 </html>
